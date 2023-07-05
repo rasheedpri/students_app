@@ -21,13 +21,13 @@ resource "aws_subnet" "subnet" {
 # Internet gateway
 
 resource "aws_internet_gateway" "igw" {
-  vpc_id = aws_vpc.devops.id
+  vpc_id = aws_vpc.vpc.id
 
 }
 
 
 resource "aws_route_table" "rt1" {
-  vpc_id = aws_vpc.devops.id
+  vpc_id = aws_vpc.vpc.id
 
   route {
     cidr_block = "0.0.0.0/0"
