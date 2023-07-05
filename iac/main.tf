@@ -23,7 +23,7 @@ resource "aws_eip" "ec2" {
 # ec2 instance 
 
 resource "aws_instance" "ec2" {
-  ami           = "ami-0a0c8eebcdd6dcbd0" # us-east-1a
+  ami           = "ami-053b0d53c279acc90" # us-east-1a
   instance_type = "t2.medium"
   key_name = "lab-key"
 
