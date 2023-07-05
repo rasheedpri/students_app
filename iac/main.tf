@@ -25,7 +25,7 @@ resource "aws_eip" "ec2" {
 resource "aws_instance" "ec2" {
   ami           = "ami-053b0d53c279acc90" # us-east-1a
   instance_type = "t2.medium"
-  key_name = "lab-key"
+  key_name = "test"
 
   network_interface {
     network_interface_id = aws_network_interface.ec2.id
