@@ -17,7 +17,7 @@ resource "aws_network_interface" "ec2" {
 resource "aws_eip" "ec2" {
   domain                    = "vpc"
   network_interface         = aws_network_interface.ec2.id
-  associate_with_private_ip = [cidrhost(var.cidr_block, 6)]
+  associate_with_private_ip = [cidrhost("${var.cidr_block}", 6)]
 }
 
 # ec2 instance 
