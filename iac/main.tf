@@ -7,7 +7,7 @@ provider "aws" {
 
 resource "aws_network_interface" "ec2" {
   subnet_id   = aws_subnet.subnet.id
-  private_ips = [cidrhost(var.cidr_block, 6)]
+  private_ips = [cidrhost(${var.cidr_block}, 6)]
 
 }
 
