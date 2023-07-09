@@ -1,6 +1,6 @@
 ---
 - name: Install Docker
-  hosts: all
+  hosts: 172.16.0.6
   become: true
   tasks:
     - name: Install required packages
