@@ -23,7 +23,6 @@ resource "aws_instance" "ec2" {
     network_interface_id = aws_network_interface.ec2.id
     device_index         = 0
   }
-subnet_id = aws_subnet.subnet.id
 
 }
 
