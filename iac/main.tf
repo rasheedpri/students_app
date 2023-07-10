@@ -18,6 +18,7 @@ resource "aws_instance" "ec2" {
   ami           = "ami-053b0d53c279acc90" # us-east-1
   instance_type = "t2.micro"
   key_name = "test"
+  associate_public_ip_address = true
 
   network_interface {
     network_interface_id = aws_network_interface.ec2.id
