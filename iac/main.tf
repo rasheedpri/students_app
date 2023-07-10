@@ -8,7 +8,6 @@ provider "aws" {
 resource "aws_network_interface" "ec2" {
   subnet_id   = aws_subnet.subnet.id
   private_ips = [cidrhost("${var.cidr_block}", 6)]
-  associate_public_ip_address = false
 
 }
 
@@ -19,7 +18,7 @@ resource "aws_instance" "ec2" {
   ami           = "ami-053b0d53c279acc90" # us-east-1
   instance_type = "t2.micro"
   key_name = "test"
-  
+  associate_public_ip_address = false
 
   network_interface {
     network_interface_id = aws_network_interface.ec2.id
