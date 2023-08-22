@@ -1,2 +1,2 @@
 [ec2]
-172.16.0.80 ansible_ssh_common_args='-o StrictHostKeyChecking=no'
+172.16.0.80 ansible_user=ubuntu ansible_ssh_common_args='-o StrictHostKeyChecking=no'
