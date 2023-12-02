@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 const studentsRoutes = require('./routes/studentsRoutes');
 
 const app = express();
-const port = 8080;
+const port = 80;
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
