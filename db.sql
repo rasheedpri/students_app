@@ -9,6 +9,6 @@ CREATE TABLE IF NOT EXISTS `students` (
     PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1;
 
-INSERT INTO `players` (`name`,`email`,`address`,`mobile`)
+INSERT INTO `students` (`name`,`email`,`address`,`mobile`)
 VALUES
   ("rasheed", "rasheedpri@gmail.com", 'Chettippadi',9656543698);
